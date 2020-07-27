@@ -1,4 +1,4 @@
-from math import sqrt
+import math
 from tkinter import*
 
 entered_value= ""
@@ -24,11 +24,11 @@ def backspace(input_text):
     input_text.set(entered_value)
 def square_root(input_text):
     global entered_value
-    number=str(eval(entered_value))
-    new_number=sqrt(number)
-    input_text.set(new_number)
+    if len(entered_value) !=0:
+        sqr = math.sqrt(int(entered_value))
+        input_text.set(sqr)
 def main():
-    #Creating basic windows
+    #Creating basic window
     window=Tk()
     window.title("Calculator")
     window.geometry("433x389")
