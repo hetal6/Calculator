@@ -28,7 +28,7 @@ def square_root(input_text):
     new_number=sqrt(number)
     input_text.set(new_number)
 def main():
-    #Creating basic window
+    #Creating basic windows
     window=Tk()
     window.title("Calculator")
     window.geometry("433x389")
